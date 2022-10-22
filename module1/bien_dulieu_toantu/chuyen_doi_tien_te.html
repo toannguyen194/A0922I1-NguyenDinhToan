@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <script>
+
+    </script>
+    <table>
+        <td style="text-align: center">
+            <div>
+                <label for="money" style="line-height: 10px " >Amount</label><br>
+                <input type="text" name="Amount" id="money">
+            </div>
+        </td>
+        <td style="text-align: center">
+            <div>
+                <label for="from" style="line-height: 10px" ;width="30px" >From Currency</label>
+            </div>
+            <div>
+                <select id="from" >
+                    <option value="1">VietNam</option>
+                    <option value="2">USA</option>
+                    <option value="3">China</option>
+                    <option value="4">Russia</option>
+                    <option value="5">Uk</option>
+                </select>
+            </div>
+        </td>
+        <td style="text-align: center">
+            <div>
+            <label for="to" style="line-height: 10px">To Currency</label>
+            </div>
+            <div>
+                <select id="to">
+                    <option value="1">VietNam</option>
+                    <option value="2">USA</option>
+                    <option value="3">China</option>
+                    <option value="4">Russia</option>
+                    <option value="5">Uk</option>
+                </select>
+        </div>
+        </td>
+        <td>
+        <button type="button"  onclick="moneyChage()">Convert</button>
+
+    </td>
+    </table><label> Result: <span id="KQ"></span></label>
+</form>
+<script>
+    function moneyChage() {
+        let a = document.getElementById("money").value;
+        let b = document.getElementById("from").value;
+        let c = document.getElementById("to").value;
+        if (b=="1") {
+            if (c == "1") {
+                document.getElementById("KQ").textContent = a;
+            } else if (c == "2") {
+                let gia = a / 23000;
+                document.getElementById("KQ").textContent = gia;
+            } else if (c == "3") {
+                gia = a / 3425, 88;
+                document.getElementById("KQ").textContent = gia;
+            } else if (c == "4") {
+                 gia = a / 404.48;
+                document.getElementById("KQ").textContent = gia;
+            } else if (c == "5") {
+                gia = a / 27706.92;
+                document.getElementById("KQ").textContent = gia;
+            }
+        }
+        if (b=="2") {
+            if (c == "2") {
+                document.getElementById("KQ").textContent = a;
+            } else if (c == "1") {
+                let gia = a * 23000;
+                document.getElementById("KQ").textContent = gia;
+            } else if (c == "3") {
+                gia = a * 7.25;
+                document.getElementById("KQ").textContent = gia;
+            } else if (c == "4") {
+                gia = a * 61.23;
+                document.getElementById("KQ").textContent = gia;
+            } else if (c == "5") {
+                gia = a * 0.90;
+                document.getElementById("KQ").textContent = gia;
+            }
+        }
+        if (b=="3") {
+            if (c == "3") {
+                document.getElementById("KQ").textContent = a;
+            } else if (c == "1") {
+                let gia = a *3425;
+                document.getElementById("KQ").textContent = gia;
+            } else if (c == "2") {
+                gia = a *0.14;
+                document.getElementById("KQ").textContent = gia;
+            } else if (c == "4") {
+                gia = a * 8.43;
+                document.getElementById("KQ").textContent = gia;
+            } else if (c == "5") {
+                gia = a *0.12;
+                document.getElementById("KQ").textContent = gia;
+            }
+        }
+        if (b=="4") {
+            if (c == "4") {
+                document.getElementById("KQ").textContent = a;
+            } else if (c == "1") {
+                let gia = a*406;
+                document.getElementById("KQ").textContent = gia;
+            } else if (c == "2") {
+                gia = a *0.02;
+                document.getElementById("KQ").textContent = gia;
+            } else if (c == "3") {
+                gia = a *0.12;
+                document.getElementById("KQ").textContent = gia;
+            } else if (c == "5") {
+                gia = a *0.01;
+                document.getElementById("KQ").textContent = gia;
+            }
+        }
+        if (b=="5") {
+            if (c == "5") {
+                document.getElementById("KQ").textContent = a;
+            } else if (c == "1") {
+                let gia = a *27692;
+                document.getElementById("KQ").textContent = gia;
+            } else if (c == 2) {
+                gia = a * 1.12;
+                document.getElementById("KQ").textContent = gia;
+            } else if (c == 3) {
+                gia = a *8.08;
+                document.getElementById("KQ").textContent = gia;
+            } else if (c == 4) {
+                gia = a *68.12;
+                document.getElementById("KQ").textContent = gia;
+            }
+        }
+    }
+</script>
+</body>
+</html>

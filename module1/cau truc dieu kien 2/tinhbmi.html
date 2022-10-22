@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="fff.css">
+
+</head>
+<body>
+<form style="position: absolute;top: 50%; left: 50%;
+    transform:translate(-50%, -50%);
+    padding: 15px;
+    width: 50%;
+    background: pink;
+    border-radius: 5px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;" > 
+    <div>
+        <label>Nhập số cân </label>
+        <input  type="text" name="weight" id="weight" ><br><span id="weight_error"></span>
+    </div>
+    <div>
+        <label>Nhập chiều cao(cm)</label>
+        <input  type="text" name="height" id="height"><br><span id="height_error"> </span>
+    </div>
+    <div>
+
+<!--
+        <label><span id="ChiSo">Chỉ số BMI:</span></label><br>
+-->
+        <button type="button" onclick="Bmi()">Xem chỉ số  </button>
+        <p id="output99"></p>
+    </div>
+<!--
+<div>
+    <label><span id="ketQua">Kết quả:</span></label><br>
+    <button type="button" onclick="KetQuaBMI()">Xem kết quả  </button><br>
+</div>
+-->
+
+</form>
+
+</body>
+<script>
+    function Bmi() {
+        const weight = parseInt(document.getElementById('weight').value);
+        const height = parseInt(document.getElementById('height').value);
+        let height_status = false, weight_status = false;
+        if (height == "" || height <= 0) {
+            document.getElementById('height_error').innerHTML = 'Nhập lại chiều cao!';
+        } else {
+            document.getElementById('height_error').innerHTML = '';
+            height_status = true;
+        }
+        if (weight == "" || weight <= 0) {
+            document.getElementById('weight_error').innerHTML = 'Nhập lại can nang!';
+        } else {
+            document.getElementById('weight_error').innerHTML = '';
+            weight_status = true;
+        }
+        if (height_status == true && weight_status == true) {
+            const Tbmi = (weight / ((height * height) / 10000)).toFixed(2);
+            document.getElementById('output99').textContent=Tbmi;
+        } else {
+            alert('The form has errors');
+            result.textContent = '';
+        }
+    }
+</script>
+</html>
