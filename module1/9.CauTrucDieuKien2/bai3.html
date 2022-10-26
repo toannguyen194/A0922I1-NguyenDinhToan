@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai toan chia het</title>
+</head>
+<body>
+<div>
+    <label for="inputnumber">Nhap a</label>
+    <input type="number" id="inputnumber"/>
+</div>
+<div>
+    <button type="button" onclick="test()" >Kiem tra</button>
+</div>
+<p id="result">Result:</p>
+</body>
+<script>
+    function test() {
+        let a = document.getElementById('inputnumber').value;
+        if (a >0){
+            document.getElementById('result').innerHTML= a + " "+"lon hon 0";
+        }
+        else{
+            document.getElementById('result').innerHTML= a +" "+ "be thua 0";
+        }
+
+    }
+
+</script>
+</html>

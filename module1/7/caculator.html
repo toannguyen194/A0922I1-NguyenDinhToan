@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form>
+    <div>
+        <input type="number" id="inputnumber" name="inputnumber">
+        <label for="inputnumber">Nhap so thu 1</label>
+    </div>
+    <div>
+        <input type="number" id="inputnumber2" name="inputnumber">
+        <label for="inputnumber2">Nhap so thu 2</label><br><br>
+    </div>
+    <div>
+        <button type="button" onclick="tinh1()">+</button>
+        <button type="button" onclick="tinh2()">-</button>
+        <button type="button" onclick="tinh3()">*</button>
+        <button type="button" onclick="tinh4()">/</button>
+    </div>
+    <p id="out">KetQua: </p>
+
+</form>
+
+</body>
+<script>
+    let number1 = document.getElementById('inputnumber');
+    let number2 =document.getElementById('inputnumber2');
+    function tinh1(){
+        let sum = valueOf(number1) +valueOf(number1) ;
+        document.getElementById("out").innerHTML = sum;
+    }
+    function tinh2(){
+        let subbb= parseFloat(number1.value)-parseFloat(number2.value);
+        document.getElementById("out").innerHTML = subbb;
+    }
+    function tinh3(){
+        let mul= parseFloat(number1.value)*parseFloat(number2.value);
+        document.getElementById("out").innerHTML = mul;
+    }
+    function tinh4(){
+        let div= parseFloat(number1.value)/parseFloat(number2.value);
+        document.getElementById("out").innerHTML = div;
+    }
+</script>
+
+</html>

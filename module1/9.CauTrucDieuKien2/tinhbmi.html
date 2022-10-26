@@ -27,15 +27,14 @@
 <!--
         <label><span id="ChiSo">Chỉ số BMI:</span></label><br>
 -->
-        <button type="button" onclick="Bmi()">Xem chỉ số  </button>
+        <button type="button" onclick="Bmi()">Xem chỉ số </button>
         <p id="output99"></p>
+
     </div>
-<!--
 <div>
     <label><span id="ketQua">Kết quả:</span></label><br>
     <button type="button" onclick="KetQuaBMI()">Xem kết quả  </button><br>
 </div>
--->
 
 </form>
 
@@ -44,7 +43,7 @@
     function Bmi() {
         const weight = parseInt(document.getElementById('weight').value);
         const height = parseInt(document.getElementById('height').value);
-        let height_status = false, weight_status = false;
+         let height_status = false, weight_status = false;
         if (height == "" || height <= 0) {
             document.getElementById('height_error').innerHTML = 'Nhập lại chiều cao!';
         } else {
@@ -63,6 +62,7 @@
         } else {
             alert('The form has errors');
             result.textContent = '';
+
         }
     }
 </script>

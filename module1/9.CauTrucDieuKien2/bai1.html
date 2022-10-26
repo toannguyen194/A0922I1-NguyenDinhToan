@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai toan chia het</title>
+</head>
+<body>
+<div>
+    <label for="inputnumber">Nhap a</label>
+    <input type="number" id="inputnumber"/>
+</div>
+<div>
+    <label for="inputnumber1">Nhap b</label>
+    <input type="number" id="inputnumber1"/>
+
+</div>
+<div>
+    <button type="button" onclick="test()" >Kiem tra</button>
+</div>
+<p id="result">Result:</p>
+</body>
+<script>
+    function test() {
+        let a = document.getElementById('inputnumber').value;
+        let b = document.getElementById('inputnumber1').value;
+        if (a % b == 0){
+            document.getElementById('result').innerHTML="a chia het cho b"
+        }
+        else{
+            document.getElementById('result').innerHTML="a khong chia het cho b"
+        }
+
+    }
+
+</script>
+</html>

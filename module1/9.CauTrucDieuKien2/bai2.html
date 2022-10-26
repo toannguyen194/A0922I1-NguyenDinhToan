@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiem tra du tuoi vao lop 10 khong</title>
+</head>
+<body>
+<div>
+    <label for="inputnumber">Nhap tuoi</label>
+    <input type="number" id="inputnumber"/>
+</div>
+<div>
+    <button type="button" onclick="test()" >Kiem tra</button>
+</div>
+<p id="result">Result:</p>
+</body>
+<script>
+    function test() {
+        let a = document.getElementById('inputnumber').value;
+        if (a >= 15){
+            document.getElementById('result').innerHTML="Du tuoi hoc lop 10"
+        }
+        else{
+            document.getElementById('result').innerHTML="Khong du tuoi hoc lop 10"
+        }
+
+    }
+
+</script>
+</html>

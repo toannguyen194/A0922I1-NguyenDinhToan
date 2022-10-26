@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai toan chia het</title>
+</head>
+<body>
+<div>
+    <label for="inputnumber">Nhap diem giua ki</label>
+    <input type="number" id="inputnumber"/>
+</div>
+<div>
+    <label for="inputnumber1">Nhap diem cuoi ki</label>
+    <input type="number" id="inputnumber1"/>
+
+</div>
+
+<div>
+    <button type="button" onclick="test()" >Kiem tra</button>
+</div>
+<p id="result">Result:</p>
+</body>
+<script>
+    function test() {
+        let a = document.getElementById('inputnumber').value;
+        let b = document.getElementById('inputnumber1').value;
+        let c = (a+b)/2
+        if (c<6.5){
+            document.getElementById('result').innerHTML= "hoc sinh trung binh";
+        }
+        else if (c<8) {
+            document.getElementById('result').innerHTML ="hoc sinh kha";
+        }
+        else{
+            document.getElementById('result').innerHTML= "hoc sinh gioi";
+        }
+
+    }
+
+</script>
+</html>
