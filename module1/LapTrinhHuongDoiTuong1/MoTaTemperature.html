@@ -2,9 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Mo Ta Temperature</title>
 </head>
 <body>
-$END$
 </body>
+<script>
+    let Temperature = function (doC) {
+        this.doC = doC;
+        this.doF = function () {
+            return 1.8 * doC + 32;
+        }
+        this.doKenvin = function () {
+            return doC + 273.15;
+        }
+    }
+    let a = new Temperature(25)
+    alert("do f la :" +a.doF() )
+    alert("do k la :" +a.doKenvin() )
+
+
+</script>
 </html>

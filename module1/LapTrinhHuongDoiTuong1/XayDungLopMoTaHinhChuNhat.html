@@ -2,9 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Xay Dung Lop Hinh Chu Nhat</title>
 </head>
 <body>
-$END$
 </body>
+<script>
+    let Ractangle = function(height,width) {
+
+        this.nheight = height;
+        this.nwidth = width;
+        this.Area = function () {
+            return height * width;
+        }
+        this.Perimeter = function () {
+            return (height + width) * 2;
+        }
+    }
+    let a = new Ractangle(6,8)
+    alert( a.Area())
+    alert( a.Perimeter())
+
+</script>
 </html>
