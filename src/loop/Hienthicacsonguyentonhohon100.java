@@ -1,6 +1,6 @@
 package loop;
 
-public class hien_thi_cac_so_nguyen_to_nho_hon_100 {
+public class Hienthicacsonguyentonhohon100 {
     public static void main(String[] args) {
         int  num=2;
         while(num<100){

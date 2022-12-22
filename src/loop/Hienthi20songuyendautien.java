@@ -2,7 +2,7 @@ package loop;
 
 import java.util.Scanner;
 
-public class hien_thi_20_so_nguyen_dau_tien {
+public class Hienthi20songuyendautien {
     public static void main(String[] args) {
         int number;
         int count = 0;

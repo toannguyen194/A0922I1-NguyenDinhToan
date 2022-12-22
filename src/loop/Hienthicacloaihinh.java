@@ -5,7 +5,7 @@ import java.net.SocketTimeoutException;
 import java.sql.SQLOutput;
 import java.util.Scanner;
 
-public class hien_thi_cac_loai_hinh {
+public class Hienthicacloaihinh {
     public static void main(String[] args) {
         int width;
         int heith;
